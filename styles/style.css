@@ -24,7 +24,7 @@ html {
 /* Navbar */
 
 .logo {
-    width: 40%;
+    width: 90px;
 }
 
 .navbar {
@@ -49,7 +49,7 @@ html {
 
 .widthNavbar {
     width: 75%;
-    padding: 0.3rem;
+    padding-left: 1rem;
 }
 
 .nav-colored .menu{

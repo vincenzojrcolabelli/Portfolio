@@ -88,6 +88,10 @@
 
 @media screen and (max-width: 768px){
 
+        .logo {
+            width: 70px;
+        }
+
         #text-container p {
             white-space: nowrap;
             animation: my-animation 9s linear infinite;
