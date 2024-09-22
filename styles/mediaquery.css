@@ -4,16 +4,6 @@
 
 @media (hover: none){
 
-    #text-container {
-        font-size: 1.5rem;
-        border: solid;
-        border-radius: 30px;
-        border-color: var(--colorThree);
-        color: white;
-        padding: 0.8rem;
-        overflow: hidden;
-    }
-
     .animated-underline::after {
         content: '';
         position: absolute;
@@ -97,6 +87,12 @@
 }
 
 @media screen and (max-width: 768px){
+
+        #text-container p {
+            white-space: nowrap;
+            animation: my-animation 9s linear infinite;
+            max-width: none;
+        }
 
         .indiceSmartphone {
             font-size: 1rem;

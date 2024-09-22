@@ -23,6 +23,10 @@ html {
 
 /* Navbar */
 
+.logo {
+    width: 40%;
+}
+
 .navbar {
     --bs-navbar-toggler-icon-bg: none;
     --bs-navbar-toggler-focus-width: 0;
@@ -45,7 +49,7 @@ html {
 
 .widthNavbar {
     width: 75%;
-    padding: 0.8rem;
+    padding: 0.3rem;
 }
 
 .nav-colored .menu{
@@ -200,7 +204,7 @@ header {
 
 #text-container p {
     white-space: nowrap;
-    animation: my-animation 5s linear infinite;
+    animation: my-animation 6s linear infinite;
     max-width: none;
 }
 
