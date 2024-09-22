@@ -113,7 +113,7 @@ html {
 /* Header */
 
 header {
-    background-image:url(assets/img/sfondo.png);
+    background-image:url(../assets/img/sfondo.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
