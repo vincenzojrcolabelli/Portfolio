@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Colori palette */
+
+:root {
+    --colorFive: rgb(56, 132, 255);
+    --colorFour: rgb(130, 54, 237);
+    --colorOne: rgb(255, 0, 110);
+    --colorTwo: rgb(251, 86, 7);
+    --colorThree: rgb(255, 190, 11);
+}
+
+/* Navbar */
+
+.navbar {
+    --bs-navbar-toggler-icon-bg: none;
+    --bs-navbar-toggler-focus-width: 0;
+    color: black;
+}
+
+.menu {
+    color: black;
+}
+
+:hover.menu {
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.nav-colored {
+    color: white;
+    background-color: #000000;
+}
+
+.widthNavbar {
+    width: 75%;
+    padding: 0.8rem;
+}
+
+.nav-colored .menu{
+    color: white;
+}
+
+
+.nav-transparent { 
+    background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);  
+}
+
+.animateNavbar {
+    animation: slideInDown 1s ease-in-out;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.offcanvas {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+    backdrop-filter: blur(2px);
+}
+
+.scrittaLogo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+.animated-underline {
+    color: gray;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    transition: all 0.2s ease;
+    text-emphasis: center;
+}
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background: var(--colorTwo);
+    transition: width 0.2s ease;
+}
+
+.animated-underline:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.animated-underline:hover::after {
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    /* background-image: url(/assets/img/sfondo.png); */
+    background-image:url(/assets/img/sfondo.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    height: 100vh;
+}
+
+.posizioneHeader {
+    position: absolute;
+    top: 55%;
+}
+
+.scrittaHeader {
+    font-size: 2rem;
+}
+
+.scrittaHeader2 {
+    font-size: 1.5rem;
+}
+
+.hello {
+    font-size: 6rem;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.animateHeader {
+    opacity: 0;
+    animation: fadeInLeft 1s forwards 0.7s;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+    }
+}
+
+.pulsanti {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: end;
+    gap: 1rem;
+}
+
+
+.animateButtons {
+    opacity: 0;
+    animation: fadeInRight 1s forwards 0.7s;
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+    }
+}
+
+#main-container {
+    overflow: hidden;
+}
+
+#text-container {
+    font-size: 1.3rem;
+    border: solid;
+    border-radius: 30px;
+    border-color: gray;
+    color: white;
+    padding: 0.8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 32vw;
+}
+
+#text-container p {
+    white-space: nowrap;
+    animation: my-animation 5s linear infinite;
+    max-width: none;
+}
+
+#text-container:hover {
+    border-color: var(--colorThree);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2 );
+    transition: all 0.5s ease-in-out;
+}
+
+
+@keyframes my-animation {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* About Me */
+
+.scrittaAboutMe {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.8rem;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+}
+
+.image-container div {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 65%;
+    height: 100%;
+    border: solid;
+    border-color: #bc4812c3;
+    z-index: -1;
+
+}
+
+.blocco{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+/* Esperienza */
+
+
+ul {
+    list-style:none;
+    padding-left: 0;
+}
+
+.bordoEsperienza {
+    border: solid;
+    border-color: #bc4812c3;
+    padding: 1rem;
+}
+
+.backend {
+    font-family: "Handjet", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.frontend {
+    font-family: "Righteous", sans-serif;
+    font-weight: 300;
+    font-style:italic;
+    font-size: smaller;
+}
+
+.bg-primario {
+    background-color: #d9b184c3;
+    padding: 2.3rem;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.scrittaEsperienza {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textEsperienza {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.animateCard1{
+    opacity: 0;
+    visibility: visible !important;
+    animation: fadeInLeft 1s forwards 0.8s;
+}
+
+
+.animateCard2{
+    opacity: 0;
+    visibility: visible !important;
+    animation: fadeInRight 1s forwards 0.8s;
+}
+
+
+/* works */
+
+.bottone {
+    background-color: #bb4711c3
+}
+
+.bottone2 {
+    background-color: #d9b184c3;
+}
+
+:hover.bottone{
+    border-color: #000000;
+    background-color: black;
+    color: white;
+}
+:hover.bottone2{
+    border-color: #000000;
+    background-color: black;
+    color: white;
+}
+
+.container-works {
+    transition: all 0.5s ease-in-out;
+}
+
+:hover.container-works {
+    transform: scale(1.1);
+    
+}
+
+/* Contacts */
+
+.contattami {
+    text-align: start;
+}
+
+.bg-contacts {
+    background-color: #bb4711;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.animated-underline-contacts {
+    color: #d9b184c3;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    transition: all 0.2s ease;
+    text-emphasis: center;
+}
+
+:focus.animated-underline-contacts {
+    color: black;
+    }  
+.animated-underline-contacts::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width 0.2s ease;
+}
+
+.animated-underline-contacts:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.animated-underline-contacts:hover::after {
+    width: 100%;
+}
+
+.bottone3 {
+    background-color: black;
+    color: white;
+}
+
+:hover.bottone3 {
+    background-color: white;
+    color: black;
+}
+
+.bottone4 {
+    background-color: white;
+    color: black;
+}
+
+:hover.bottone4 {
+    background-color: black;
+    color: white;
+}
+
+.indice {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    width: 70px;
+}
+
+.scrittaContactMe {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.8rem;
+}
+
+.indiceSmartphone {
+    font-size: 1.5rem;
+}
+
+/* Link parte di pagina */
+
+#aboutMe {
+    scroll-margin-top: 150px;
+}
+
+#works {
+    scroll-margin-top: 130px;
+}
+
+
