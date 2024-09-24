@@ -174,10 +174,10 @@ header {
 
 .animateButtons {
     opacity: 0;
-    animation: fadeInRight 1s forwards 0.7s;
+    animation: fadeInUp 1s forwards 0.7s;
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInUp {
     to {
         opacity: 1;
     }
