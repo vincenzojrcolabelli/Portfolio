@@ -266,7 +266,6 @@ ul {
 }
 
 .bordoEsperienza {
-    height: 380px;
     border: solid;
     border-color: #bc4812c3;
     padding: 1rem;
@@ -322,6 +321,10 @@ ul {
 
 
 /* works */
+
+.cardHeight {
+    height: 380px;
+}
 
 .bottone {
     background-color: #bb4711c3
